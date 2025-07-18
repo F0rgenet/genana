@@ -1,0 +1,81 @@
+import type { Character } from "@/types/character"
+
+export const characters: Character[] = [
+  {
+    id: "1",
+    name: "Анна",
+    role: "Помощник по обучению",
+    description:
+      "Дружелюбный наставник, который поможет освоить новые навыки. Использует простой язык и много эмодзи.",
+    personality: "ENFP",
+    tone: "Дружелюбный",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.8,
+    chats: 1250,
+  },
+  {
+    id: "2",
+    name: "Макс",
+    role: "Бренд-амбассадор",
+    description: "Энергичный представитель бренда с саркастичным чувством юмора. Знает все о продуктах и трендах.",
+    personality: "ENTP",
+    tone: "Саркастичный",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.6,
+    chats: 890,
+  },
+  {
+    id: "3",
+    name: "София",
+    role: "Психолог-консультант",
+    description: "Эмпатичный консультант, который поможет разобраться в эмоциях и найти решения проблем.",
+    personality: "INFJ",
+    tone: "Поддерживающий",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.9,
+    chats: 2100,
+  },
+  {
+    id: "4",
+    name: "Алекс",
+    role: "Технический эксперт",
+    description: "Знающий специалист по IT и программированию. Объясняет сложные вещи простыми словами.",
+    personality: "INTJ",
+    tone: "Экспертный",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.7,
+    chats: 1560,
+  },
+  {
+    id: "5",
+    name: "Лиза",
+    role: "Креативный помощник",
+    description: "Вдохновляющий креативщик, который поможет с идеями для проектов и творческими решениями.",
+    personality: "ENFP",
+    tone: "Вдохновляющий",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.5,
+    chats: 780,
+  },
+  {
+    id: "6",
+    name: "Дабстеп",
+    role: "Бизнес-консультант",
+    description: "Опытный бизнес-аналитик, который поможет с стратегией и принятием решений.",
+    personality: "ENTJ",
+    tone: "Профессиональный",
+    language: "Русский",
+    avatar: "/placeholder.svg?height=80&width=80",
+    rating: 4.8,
+    chats: 1340,
+  },
+]
+
+export const getCharacterById = (id: string): Character | undefined => {
+  return characters.find((c) => c.id === id)
+}
