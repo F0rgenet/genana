@@ -1,0 +1,512 @@
+2025-07-19 13:54:58.658 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:54:58.659 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:54:58.664 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:55:08.642 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:56:06.957 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:56:06.958 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:56:06.962 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:56:10.306 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:57:40.688 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:57:40.688 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:57:40.692 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:57:49.994 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 13:57:49.995 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'тест', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 13:57:50.039 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 1f6a47c4-6a66-4f63-9e68-11d34fe6bd6c
+2025-07-19 13:57:50.040 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 1f6a47c4-6a66-4f63-9e68-11d34fe6bd6c
+2025-07-19 13:57:50.041 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:57:57.044 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:57:57.044 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:57:57.050 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:57:58.030 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 13:57:58.031 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'тест', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 13:57:58.075 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 327bef2d-5752-4e60-8868-445f6e8a566d
+2025-07-19 13:57:58.075 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 327bef2d-5752-4e60-8868-445f6e8a566d
+2025-07-19 13:57:58.077 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:58:32.475 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:58:32.475 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:58:32.478 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:58:46.598 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 13:58:46.598 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 13:58:46.604 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 13:58:47.583 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 13:58:47.583 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'тест', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 13:58:47.628 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 2f3b070e-9664-4b0c-88c0-7b43df018a15
+2025-07-19 13:58:47.629 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 2f3b070e-9664-4b0c-88c0-7b43df018a15
+2025-07-19 13:58:47.630 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:59:28.923 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 13:59:28.924 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 13:59:28.928 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 13:59:28.930 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 13:59:29.223 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 13:59:29.224 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 13:59:29.226 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 1f6a47c4-6a66-4f63-9e68-11d34fe6bd6c
+2025-07-19 13:59:29.228 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:28:52.721 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:28:52.721 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:28:52.805 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:31:15.165 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:31:15.166 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:31:15.166 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:31:15.176 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:31:15.181 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 0 characters.
+2025-07-19 14:31:15.182 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:15.182 | WARNING  | backend.main:get_recommended_character_endpoint:58 - No characters found to recommend.
+2025-07-19 14:31:15.184 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:15.264 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:31:15.264 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:31:15.266 | WARNING  | backend.main:get_recommended_character_endpoint:58 - No characters found to recommend.
+2025-07-19 14:31:15.266 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:19.238 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:31:19.238 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:31:19.241 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 0 characters.
+2025-07-19 14:31:19.242 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:19.250 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:31:19.251 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:31:19.252 | WARNING  | backend.main:get_recommended_character_endpoint:58 - No characters found to recommend.
+2025-07-19 14:31:19.252 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:21.550 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:31:21.551 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:31:21.554 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 0 characters.
+2025-07-19 14:31:21.555 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:21.562 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:31:21.563 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:31:21.563 | WARNING  | backend.main:get_recommended_character_endpoint:58 - No characters found to recommend.
+2025-07-19 14:31:21.564 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:31.871 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 14:31:31.872 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'Привет', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:31:31.897 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 767ca300-4c10-41a6-87df-0bf7b1948908
+2025-07-19 14:31:31.897 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 767ca300-4c10-41a6-87df-0bf7b1948908
+2025-07-19 14:31:31.898 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:35.480 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:31:35.480 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:31:35.481 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 1 characters.
+2025-07-19 14:31:35.482 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:31:35.489 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:31:35.489 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:31:35.490 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 767ca300-4c10-41a6-87df-0bf7b1948908
+2025-07-19 14:31:35.491 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:33:55.714 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: привет
+2025-07-19 14:33:55.760 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'привет', 'role': 'проверка', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:33:55.764 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:34:05.752 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: привет
+2025-07-19 14:34:05.753 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'привет', 'role': 'проверка', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:34:05.759 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:34:58.787 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:34:58.787 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:34:58.860 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:35:27.368 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 14:35:27.369 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'Тестирование', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:35:27.396 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:35:27.396 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:35:27.398 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:35:41.050 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:35:41.050 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:35:41.053 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 1 characters.
+2025-07-19 14:35:41.053 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:35:41.067 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:35:41.067 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:35:41.068 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:35:41.069 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:37:05.557 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:37:05.557 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:37:05.559 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:37:27.404 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:37:27.404 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:37:27.406 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:37:53.548 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Проверка
+2025-07-19 14:37:53.549 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'Тестировщик', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:37:53.576 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:37:53.576 | INFO     | backend.main:create_character_endpoint:42 - Character Проверка created with ID: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:37:53.577 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:38:23.649 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:23.649 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:23.651 | DEBUG    | backend.main:get_character_endpoint:59 - Found character with id 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:23.652 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:38:36.468 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:36.469 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:36.470 | DEBUG    | backend.main:get_character_endpoint:59 - Found character with id 64070308-813e-4d79-ac1e-3cb63fd53e62
+2025-07-19 14:38:36.471 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:38:40.174 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:38:40.174 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:38:40.178 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 2 characters.
+2025-07-19 14:38:40.179 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:38:40.194 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:38:40.194 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:38:40.195 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:38:40.196 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:21.895 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:40:21.897 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:40:21.899 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 2 characters.
+2025-07-19 14:40:21.900 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:21.911 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:40:21.911 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:40:21.913 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:40:21.913 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:41.175 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Человек паук
+2025-07-19 14:40:41.176 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Человек паук', 'role': 'Помощник по учебе', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:40:41.212 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 4ebf5bf2-83a3-4d48-b08d-9f71c9d9ef10
+2025-07-19 14:40:41.212 | INFO     | backend.main:create_character_endpoint:42 - Character Человек паук created with ID: 4ebf5bf2-83a3-4d48-b08d-9f71c9d9ef10
+2025-07-19 14:40:41.213 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:41.307 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: 4ebf5bf2-83a3-4d48-b08d-9f71c9d9ef10
+2025-07-19 14:40:41.307 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 4ebf5bf2-83a3-4d48-b08d-9f71c9d9ef10
+2025-07-19 14:40:41.309 | DEBUG    | backend.main:get_character_endpoint:59 - Found character with id 4ebf5bf2-83a3-4d48-b08d-9f71c9d9ef10
+2025-07-19 14:40:41.310 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:43.487 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:40:43.487 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:40:43.491 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:40:43.492 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:43.502 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:40:43.503 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:40:43.504 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:40:43.505 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:45.432 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:40:45.433 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:40:45.435 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:40:45.436 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:45.509 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:40:45.509 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:40:45.511 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:40:45.511 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:49.208 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:40:49.209 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:40:49.211 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:40:49.213 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:49.218 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:40:49.218 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:40:49.219 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:40:49.219 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:40:58.295 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:40:58.296 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:40:58.298 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:41:01.434 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:41:01.434 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:41:01.446 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:41:01.447 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:01.451 | INFO     | backend.main:get_character_endpoint:54 - Fetching character with id: recommended
+2025-07-19 14:41:01.451 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: recommended
+2025-07-19 14:41:01.453 | WARNING  | backend.main:get_character_endpoint:57 - Character with id recommended not found
+2025-07-19 14:41:01.453 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:34.620 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:41:34.620 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:41:34.621 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:41:48.777 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:41:48.777 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:41:48.789 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:41:48.791 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:48.797 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:41:48.798 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:41:48.799 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:41:48.800 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:55.438 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:41:55.438 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:41:55.441 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:41:55.442 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:55.449 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:41:55.449 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:41:55.451 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:41:55.452 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:57.733 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:41:57.734 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:41:57.735 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:41:57.736 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:41:57.740 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:41:57.740 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:41:57.741 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:41:57.742 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:42:01.750 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:42:01.750 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:42:01.751 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:42:01.752 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:42:01.759 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:42:01.759 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:42:01.760 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:42:01.761 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:10.549 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:43:10.549 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:43:10.551 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 3 characters.
+2025-07-19 14:43:10.552 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:10.560 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:43:10.560 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:43:10.561 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:43:10.562 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:25.565 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: ЛДОРО
+2025-07-19 14:43:25.565 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'ЛДОРО', 'role': 'ЛООЛО', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:43:25.620 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: a5562215-38e5-47e2-8749-1d2ef95abd94
+2025-07-19 14:43:25.621 | INFO     | backend.main:create_character_endpoint:42 - Character ЛДОРО created with ID: a5562215-38e5-47e2-8749-1d2ef95abd94
+2025-07-19 14:43:25.621 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:25.692 | INFO     | backend.main:get_character_endpoint:66 - Fetching character with id: a5562215-38e5-47e2-8749-1d2ef95abd94
+2025-07-19 14:43:25.692 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: a5562215-38e5-47e2-8749-1d2ef95abd94
+2025-07-19 14:43:25.694 | DEBUG    | backend.main:get_character_endpoint:71 - Found character with id a5562215-38e5-47e2-8749-1d2ef95abd94
+2025-07-19 14:43:25.695 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:28.234 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:43:28.235 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:43:28.236 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 4 characters.
+2025-07-19 14:43:28.237 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:28.243 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:43:28.243 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:43:28.245 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:43:28.246 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:30.795 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:43:30.796 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:43:30.797 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 4 characters.
+2025-07-19 14:43:30.798 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:43:30.803 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:43:30.803 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:43:30.804 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:43:30.805 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:44:12.144 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:44:12.144 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:44:12.145 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 4 characters.
+2025-07-19 14:44:12.146 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:44:12.152 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:44:12.152 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:44:12.154 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:44:12.154 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:45:06.593 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Тест
+2025-07-19 14:45:06.594 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Тест', 'role': 'Кайфарик', 'format': 'telegram-bot', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': ['Аналитический', 'Саркастичный'], 'communication_tone': '', 'initiative_level': '', 'formality': 'informal', 'language_complexity': 'expert', 'use_emoji': 'no', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 14:45:06.610 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 49c47952-2b22-4dc2-bb73-1688757f6864
+2025-07-19 14:45:06.610 | INFO     | backend.main:create_character_endpoint:42 - Character Тест created with ID: 49c47952-2b22-4dc2-bb73-1688757f6864
+2025-07-19 14:45:06.611 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:45:06.675 | INFO     | backend.main:get_character_endpoint:66 - Fetching character with id: 49c47952-2b22-4dc2-bb73-1688757f6864
+2025-07-19 14:45:06.676 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 49c47952-2b22-4dc2-bb73-1688757f6864
+2025-07-19 14:45:06.678 | DEBUG    | backend.main:get_character_endpoint:71 - Found character with id 49c47952-2b22-4dc2-bb73-1688757f6864
+2025-07-19 14:45:06.679 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:45:08.624 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:45:08.624 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:45:08.625 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:45:08.626 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:45:08.634 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:45:08.634 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:45:08.635 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:45:08.636 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:46:37.315 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:46:37.315 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:46:37.317 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:46:37.317 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:46:37.323 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:46:37.324 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:46:37.324 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:46:37.325 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:46:39.849 | INFO     | backend.main:get_character_endpoint:66 - Fetching character with id: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:46:39.849 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:46:39.850 | DEBUG    | backend.main:get_character_endpoint:71 - Found character with id 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:46:39.851 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:47:18.398 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:47:18.398 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:47:18.400 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:47:18.401 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:47:18.409 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:47:18.409 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:47:18.410 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:47:18.411 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:48:07.572 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:48:07.572 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:48:07.573 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:48:07.574 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:48:07.582 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:48:07.582 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:48:07.583 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:48:07.583 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:48:12.490 | INFO     | backend.main:get_character_endpoint:66 - Fetching character with id: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:48:12.491 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:48:12.492 | DEBUG    | backend.main:get_character_endpoint:71 - Found character with id 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:48:12.493 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:48:50.348 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:48:50.348 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:48:50.349 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:48:50.350 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:48:50.358 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:48:50.358 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:48:50.359 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:48:50.361 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:55:53.308 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:55:53.308 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:55:53.309 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:55:53.310 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:55:53.314 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:55:53.315 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:55:53.315 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:55:53.316 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:56:56.120 | INFO     | backend.main:get_character_endpoint:66 - Fetching character with id: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:56:56.120 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:56:56.125 | DEBUG    | backend.main:get_character_endpoint:71 - Found character with id 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:56:56.126 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:56:57.463 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:56:57.464 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:56:57.465 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:56:57.466 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:56:57.473 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:56:57.473 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:56:57.475 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:56:57.476 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:57:00.479 | INFO     | backend.main:get_characters_endpoint:47 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:57:00.480 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:57:00.481 | DEBUG    | backend.main:get_characters_endpoint:49 - Found 5 characters.
+2025-07-19 14:57:00.482 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:57:00.488 | INFO     | backend.main:get_recommended_character_endpoint:54 - Fetching recommended character.
+2025-07-19 14:57:00.488 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:57:00.489 | INFO     | backend.main:get_recommended_character_endpoint:60 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:57:00.490 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:58:36.861 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:58:36.861 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:58:36.863 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:58:48.303 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:58:48.303 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:58:48.312 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 5 characters.
+2025-07-19 14:58:48.313 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:58:48.319 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 14:58:48.319 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:58:48.320 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:58:48.321 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:58:52.800 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 14:58:52.801 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 14:58:52.802 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 14:58:54.203 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 14:58:54.203 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 14:58:54.217 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 5 characters.
+2025-07-19 14:58:54.218 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 14:58:54.225 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 14:58:54.225 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 14:58:54.227 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 14:58:54.227 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:12.374 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Человек-человек
+2025-07-19 15:00:12.375 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Человек-человек', 'role': 'Помощник по дабстепу', 'format': 'telegram-bot', 'target_audience': 'Родители', 'language': 'english', 'custom_language': '', 'personality_type': 'ENTP', 'character_traits': ['Дружелюбный', 'Спокойный', 'Эмпатичный'], 'communication_tone': 'friendly', 'initiative_level': 'medium', 'formality': 'semi-formal', 'language_complexity': 'simple', 'use_emoji': 'moderate', 'typical_phrases': ['ек макарек', 'датасеты'], 'main_tasks': ['Техническая поддержка', 'Консультации'], 'context_memory': 'помнить данные', 'content_filter': True, 'forbidden_topics': ['Финансовые советы', 'Секс'], 'behavior_limits': 'никаких романтических связей', 'avatar_url': None, 'tags': ['Дружелюбный', 'friendly'], 'description': None}
+2025-07-19 15:00:12.395 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:00:12.395 | INFO     | backend.main:create_character_endpoint:51 - Character Человек-человек created with ID: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:00:12.396 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:12.471 | INFO     | backend.main:get_character_endpoint:75 - Fetching character with id: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:00:12.472 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:00:12.476 | DEBUG    | backend.main:get_character_endpoint:80 - Found character with id 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:00:12.477 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:15.323 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:00:15.323 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:00:15.325 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 6 characters.
+2025-07-19 15:00:15.326 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:15.336 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:00:15.336 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:00:15.338 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:00:15.339 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:17.757 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:00:17.757 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:00:17.759 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 6 characters.
+2025-07-19 15:00:17.760 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:17.765 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:00:17.765 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:00:17.766 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:00:17.767 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:00:52.853 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:00:52.853 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:00:52.855 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:01:14.870 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:01:14.871 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:01:14.872 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:01:17.589 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:01:17.589 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:01:17.591 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:01:18.955 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:01:18.955 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:01:18.957 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:05:04.822 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:05:04.822 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:05:04.824 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:05:45.725 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:05:45.725 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:05:45.728 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:05:53.581 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:05:53.581 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:05:53.583 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:05:59.134 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:05:59.134 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:05:59.136 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:10:36.600 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:10:36.600 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:10:36.614 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 6 characters.
+2025-07-19 15:10:36.615 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:10:36.626 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:10:36.627 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:10:36.628 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:10:36.629 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:10:41.992 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:10:41.992 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:10:41.994 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:10:52.736 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:10:52.736 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:10:52.748 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 6 characters.
+2025-07-19 15:10:52.749 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:10:52.914 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:10:52.915 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:10:52.916 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:10:52.916 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:11:25.513 | INFO     | backend.main:get_character_endpoint:75 - Fetching character with id: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:11:25.514 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:11:25.517 | DEBUG    | backend.main:get_character_endpoint:80 - Found character with id 738ab993-5a07-48e2-8b1c-e1b0f00b766e
+2025-07-19 15:11:25.518 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:11:28.159 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:11:28.159 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:11:28.160 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 6 characters.
+2025-07-19 15:11:28.162 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:11:28.172 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:11:28.173 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:11:28.174 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:11:28.175 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:12:09.086 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:12:09.087 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:12:09.089 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:12:59.194 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:12:59.194 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:12:59.196 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:13:59.969 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: Человек-паук
+2025-07-19 15:13:59.970 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Человек-паук', 'role': 'Красавчик', 'format': 'ai-visual', 'target_audience': 'Родители', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENTP', 'character_traits': ['Дружелюбный', 'Аналитический', 'Спокойный'], 'communication_tone': 'ironic', 'initiative_level': 'low', 'formality': 'semi-formal', 'language_complexity': 'simple', 'use_emoji': 'moderate', 'typical_phrases': ['god damn'], 'main_tasks': ['Помощь в обучении', 'Развлечение'], 'context_memory': 'всё', 'content_filter': True, 'forbidden_topics': ['Насилие', 'Политика', 'Наркотики'], 'behavior_limits': 'Никаких подколов', 'avatar_url': None, 'tags': ['Дружелюбный', 'Помощь в обучении'], 'description': None}
+2025-07-19 15:13:59.999 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: a2b487ed-8d2a-4e9a-ae12-698f72072638
+2025-07-19 15:13:59.999 | INFO     | backend.main:create_character_endpoint:51 - Character Человек-паук created with ID: a2b487ed-8d2a-4e9a-ae12-698f72072638
+2025-07-19 15:14:00.001 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:14:00.459 | INFO     | backend.main:get_character_endpoint:75 - Fetching character with id: a2b487ed-8d2a-4e9a-ae12-698f72072638
+2025-07-19 15:14:00.459 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: a2b487ed-8d2a-4e9a-ae12-698f72072638
+2025-07-19 15:14:00.464 | DEBUG    | backend.main:get_character_endpoint:80 - Found character with id a2b487ed-8d2a-4e9a-ae12-698f72072638
+2025-07-19 15:14:00.465 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:14:02.516 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:14:02.517 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:14:02.521 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 7 characters.
+2025-07-19 15:14:02.523 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:14:02.533 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:14:02.534 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:14:02.535 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:14:02.536 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:14:04.935 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:14:04.935 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:14:04.937 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 7 characters.
+2025-07-19 15:14:04.939 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:14:04.948 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:14:04.948 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:14:04.949 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: 925caef8-37b4-4069-b4c1-a65d1ce2eea2
+2025-07-19 15:14:04.950 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:16:07.490 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:16:07.490 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:16:07.493 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:19:39.959 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:19:39.959 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:19:39.960 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:19:45.852 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:19:45.852 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:19:45.854 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:19:56.698 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:19:56.698 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:19:56.700 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:21:07.971 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:21:07.971 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:21:31.443 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:21:31.443 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:22:15.656 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:22:15.656 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:22:28.004 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:22:28.005 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:27:06.886 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:27:06.886 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:27:06.893 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:27:06.894 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:27:10.879 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:27:10.880 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:27:10.936 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:27:10.991 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:27:10.991 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:27:10.992 | DEBUG    | backend.database.database:get_db:41 - Closing database session.

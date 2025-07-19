@@ -15,10 +15,12 @@ import { toast } from "sonner"
 
 export default function GeneratorPage() {
   const router = useRouter()
+  const [formDisabled, setFormDisabled] = useState(true)
   const [formData, setFormData] = useState({
     // Общая информация
     name: "",
     role: "",
+    aiModel: "",
     format: "",
     targetAudience: "",
     language: "russian",
@@ -106,7 +108,7 @@ export default function GeneratorPage() {
             </div>
           </div>
           <div className="flex gap-2">
-            <Button onClick={handleSave} className="bg-gradient-brand hover:bg-gradient-brand-hover">
+            <Button onClick={handleSave} className="bg-gradient-brand hover:bg-gradient-brand-hover" disabled={formDisabled}>
               <Save className="h-4 w-4 mr-2" />
               Сохранить
             </Button>
@@ -121,7 +123,11 @@ export default function GeneratorPage() {
         </div>
 
         <div className="space-y-8">
-          <GeneralInfoSection formData={formData} handleInputChange={handleInputChange} />
+          <GeneralInfoSection
+            formData={formData}
+            handleInputChange={handleInputChange}
+            setFormDisabled={setFormDisabled}
+          />
           <BehaviorSection
             formData={formData}
             handleInputChange={handleInputChange}
@@ -147,7 +153,12 @@ export default function GeneratorPage() {
 
           {/* Кнопки действий */}
           <div className="flex justify-center gap-4 pt-8">
-            <Button size="lg" onClick={handleSave} className="bg-gradient-brand hover:bg-gradient-brand-hover">
+            <Button
+              size="lg"
+              onClick={handleSave}
+              className="bg-gradient-brand hover:bg-gradient-brand-hover"
+              disabled={formDisabled}
+            >
               <Sparkles className="h-4 w-4 mr-2" />
               Создать персонажа
             </Button>

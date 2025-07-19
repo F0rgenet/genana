@@ -1,11 +1,39 @@
+import { useEffect, useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { apiService } from "@/lib/api"
+import { Skeleton } from "@/components/ui/skeleton"
 
-export function GeneralInfoSection({ formData, handleInputChange }: any) {
+export function GeneralInfoSection({ formData, handleInputChange, setFormDisabled }: any) {
+  const [aiModels, setAiModels] = useState<string[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchAiModels = async () => {
+      setIsLoading(true)
+      const { success, models } = await apiService.getAiModels()
+      if (success && models.length > 0) {
+        setAiModels(models)
+        // Устанавливаем первую модель как значение по умолчанию, если оно еще не установлено
+        if (!formData.aiModel) {
+          handleInputChange("aiModel", models[0])
+        }
+        setFormDisabled(false)
+      } else {
+        // Если модели не загружены, отключаем форму
+        setFormDisabled(true)
+      }
+      setIsLoading(false)
+    }
+
+    fetchAiModels()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [setFormDisabled])
+
   return (
     <Card>
       <CardHeader>
@@ -37,6 +65,35 @@ export function GeneralInfoSection({ formData, handleInputChange }: any) {
               placeholder="Например: помощник по обучению"
             />
           </div>
+        </div>
+
+        <div>
+          <Label htmlFor="aiModel">Модель ИИ *</Label>
+          {isLoading ? (
+            <Skeleton className="h-10 w-full" />
+          ) : (
+            <Select
+              value={formData.aiModel}
+              onValueChange={(value) => handleInputChange("aiModel", value)}
+              disabled={aiModels.length === 0}
+            >
+              <SelectTrigger>
+                <SelectValue placeholder="Выберите модель ИИ" />
+              </SelectTrigger>
+              <SelectContent>
+                {aiModels.map((model) => (
+                  <SelectItem key={model} value={model}>
+                    {model}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
+          {aiModels.length === 0 && !isLoading && (
+            <p className="text-sm text-red-500 mt-1">
+              Модели ИИ не найдены. Создание персонажа недоступно.
+            </p>
+          )}
         </div>
 
         <div>

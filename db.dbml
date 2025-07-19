@@ -1,0 +1,57 @@
+// DBML for Genana Backend (single-user context)
+
+Table Character {
+  id string [primary key]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp
+
+  // General Info
+  name string [not null]
+  role string [not null]
+  format string
+  target_audience string
+  language string
+  custom_language string
+
+  // Behavior
+  personality_type string
+  character_traits string[] // Массив строк, например: ['Дружелюбный', 'Саркастичный']
+  communication_tone string
+  initiative_level string
+
+  // Language Style
+  formality string
+  language_complexity string
+  use_emoji string
+  typical_phrases string[] // Массив строк, например: ['Привет!', 'Чем могу помочь?']
+
+  // Scenario
+  main_tasks string[] // Массив строк, например: ['Ответы на FAQ', 'Техническая поддержка']
+  context_memory string
+
+  // Restrictions
+  content_filter boolean
+  forbidden_topics string[] // Массив строк, например: ['Политика', 'Медицинские советы']
+  behavior_limits string
+  
+  // Frontend-specific fields (optional, could be stored elsewhere)
+  avatar_url string
+  tags string[]
+  description string
+}
+
+Table ChatMessage {
+  id string [primary key]
+  character_id string [ref: > Character.id]
+  datetime timestamp [default: `now()`]
+  role string [note: 'user' or 'assistant']
+  content text [not null]
+}
+
+Table Review {
+  id string [primary key]
+  character_id string [ref: > Character.id]
+  created_at timestamp [default: `now()`]
+  rating int [note: '1 to 5']
+  comment text
+}

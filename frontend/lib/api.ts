@@ -6,6 +6,8 @@ export const API_ENDPOINTS = {
   CHARACTERS: `${API_BASE_URL}/api/characters`,
   CHARACTER_BY_ID: (id: string) => `${API_BASE_URL}/api/characters/${id}`,
   RECOMMENDED_CHARACTER: `${API_BASE_URL}/api/characters/recommended`,
+  // Модели ИИ
+  AI_MODELS: `${API_BASE_URL}/api/ai-models`,
 };
 
 // Типы для API запросов
@@ -118,6 +120,21 @@ export const apiService = {
       return { success: true, character: transformKeysToCamelCase(result) };
     } catch (error) {
       return { success: false, error: (error as Error).message, character: null };
+    }
+  },
+
+  // Получение списка моделей ИИ
+  async getAiModels() {
+    try {
+      const response = await fetch(API_ENDPOINTS.AI_MODELS);
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData, models: [] };
+      }
+      const result = await response.json();
+      return { success: true, models: result };
+    } catch (error) {
+      return { success: false, error: (error as Error).message, models: [] };
     }
   },
 };
