@@ -31,12 +31,16 @@ export function RecommendedCharacterCard({ character }: RecommendedCharacterCard
             <p className="text-gray-600 mb-4 leading-relaxed">{character.description}</p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
-              <Badge variant="secondary" className="bg-brand-100 text-brand-700">
-                {character.personality}
-              </Badge>
-              <Badge variant="secondary" className="bg-accent-100 text-accent-700">
-                {character.tone}
-              </Badge>
+              {character.tags?.[0] && (
+                <Badge variant="secondary" className="bg-brand-100 text-brand-700">
+                  {character.tags[0]}
+                </Badge>
+              )}
+              {character.tags?.[1] && (
+                <Badge variant="secondary" className="bg-accent-100 text-accent-700">
+                  {character.tags[1]}
+                </Badge>
+              )}
               <Badge variant="secondary" className="bg-yellow-100 text-yellow-700">
                 ⭐ {character.rating} рейтинг
               </Badge>

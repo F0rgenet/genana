@@ -1,119 +1,124 @@
-import { characters, getCharacterById } from "@/lib/mock-data"
-
-// Плейсхолдеры для будущих API запросов
+// Определяем базовый URL для API
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export const API_ENDPOINTS = {
   // Персонажи
-  GET_CHARACTERS: "/api/characters",
-  GET_CHARACTER: (id: string) => `/api/characters/${id}`,
-  CREATE_CHARACTER: "/api/characters",
-  UPDATE_CHARACTER: (id: string) => `/api/characters/${id}`,
-  DELETE_CHARACTER: (id: string) => `/api/characters/${id}`,
-
-  // Чаты
-  GET_CHAT_HISTORY: (characterId: string) => `/api/chats/${characterId}`,
-  SEND_MESSAGE: "/api/chats/message",
-
-  // Отзывы
-  CREATE_REVIEW: "/api/reviews",
-  GET_REVIEWS: (characterId: string) => `/api/reviews/${characterId}`,
-
-  // Рекомендации
-  GET_RECOMMENDED_CHARACTER: "/api/characters/recommended",
-}
+  CHARACTERS: `${API_BASE_URL}/api/characters`,
+  CHARACTER_BY_ID: (id: string) => `${API_BASE_URL}/api/characters/${id}`,
+  RECOMMENDED_CHARACTER: `${API_BASE_URL}/api/characters/recommended`,
+};
 
 // Типы для API запросов
 export interface CreateCharacterRequest {
-  name: string
-  role: string
-  format: string
-  targetAudience: string
-  language: string
-  customLanguage?: string
-  personalityType: string
-  characterTraits: string[]
-  communicationTone: string
-  initiativeLevel: string
-  formality: string
-  languageComplexity: string
-  useEmoji: string
-  typicalPhrases: string[]
-  mainTasks: string[]
-  contextMemory: string
-  contentFilter: string
-  forbiddenTopics: string[]
-  behaviorLimits: string
+  name: string;
+  role: string;
+  format?: string;
+  targetAudience?: string;
+  language?: string;
+  customLanguage?: string;
+  personalityType?: string;
+  characterTraits?: string[];
+  communicationTone?: string;
+  initiativeLevel?: string;
+  formality?: string;
+  languageComplexity?: string;
+  useEmoji?: string;
+  typicalPhrases?: string[];
+  mainTasks?: string[];
+  contextMemory?: string;
+  contentFilter?: boolean;
+  forbiddenTopics?: string[];
+  behaviorLimits?: string;
+  description?: string;
+  tags?: string[];
 }
 
-export interface SendMessageRequest {
-  characterId: string
-  message: string
-  userId?: string
-}
+// Вспомогательные функции для конвертации ключей
+const toSnakeCase = (str: string) => str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`);
+const toCamelCase = (str: string) => str.replace(/_([a-z])/g, (g) => g[1].toUpperCase());
 
-export interface CreateReviewRequest {
-  characterId: string
-  rating: number
-  comment: string
-  userId?: string
-}
+const transformKeys = (obj: any, transformFn: (key: string) => string): any => {
+  if (Array.isArray(obj)) {
+    return obj.map(v => transformKeys(v, transformFn));
+  } else if (obj !== null && obj.constructor === Object) {
+    return Object.keys(obj).reduce((acc, key) => {
+      const newKey = transformFn(key);
+      acc[newKey] = transformKeys(obj[key], transformFn);
+      return acc;
+    }, {} as any);
+  }
+  return obj;
+};
 
-// Функции-плейсхолдеры для API вызовов
+const transformKeysToSnakeCase = (obj: any) => transformKeys(obj, toSnakeCase);
+const transformKeysToCamelCase = (obj: any) => transformKeys(obj, toCamelCase);
+
+
+// Функции для API вызовов
 export const apiService = {
-  // Получение списка персонажей
-  async getCharacters() {
-    // TODO: Реализовать API запрос
-    console.log("API Call: Get Characters")
-    return {
-      success: true,
-      characters: characters,
-    }
-  },
-
-  // Получение одного персонажа
-  async getCharacter(id: string) {
-    // TODO: Реализовать API запрос
-    console.log("API Call: Get Character", id)
-    const character = getCharacterById(id)
-    if (character) {
-      return { success: true, character }
-    }
-    return { success: false, character: null }
-  },
-
   // Создание персонажа
   async createCharacter(data: CreateCharacterRequest) {
-    // TODO: Реализовать API запрос
-    console.log("API Call: Create Character", data)
-    return { success: true, characterId: "generated-id" }
-  },
-
-  // Отправка сообщения
-  async sendMessage(data: SendMessageRequest) {
-    // TODO: Реализовать API запрос к ИИ
-    console.log("API Call: Send Message", data)
-    return {
-      success: true,
-      response: "Ответ от ИИ персонажа будет здесь после интеграции с API",
+    const snakeCaseData = transformKeysToSnakeCase(data);
+    try {
+      const response = await fetch(API_ENDPOINTS.CHARACTERS, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(snakeCaseData),
+      });
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData };
+      }
+      const result = await response.json();
+      return { success: true, character: transformKeysToCamelCase(result) };
+    } catch (error) {
+      return { success: false, error: (error as Error).message };
     }
   },
 
-  // Создание отзыва
-  async createReview(data: CreateReviewRequest) {
-    // TODO: Реализовать API запрос
-    console.log("API Call: Create Review", data)
-    return { success: true, reviewId: "generated-review-id" }
+  // Получение списка персонажей
+  async getCharacters() {
+    try {
+      const response = await fetch(API_ENDPOINTS.CHARACTERS);
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData, characters: [] };
+      }
+      const result = await response.json();
+      return { success: true, characters: transformKeysToCamelCase(result) };
+    } catch (error) {
+      return { success: false, error: (error as Error).message, characters: [] };
+    }
   },
 
   // Получение рекомендованного персонажа
   async getRecommendedCharacter() {
-    // TODO: Реализовать API запрос с ML рекомендациями
-    console.log("API Call: Get Recommended Character")
-    // В мок-данных просто вернем первого персонажа
-    const character = getCharacterById("1")
-    return {
-      success: true,
-      character,
+     try {
+      const response = await fetch(API_ENDPOINTS.RECOMMENDED_CHARACTER);
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData, character: null };
+      }
+      const result = await response.json();
+      return { success: true, character: transformKeysToCamelCase(result) };
+    } catch (error) {
+      return { success: false, error: (error as Error).message, character: null };
     }
   },
-}
+
+  // Получение персонажа по ID
+  async getCharacter(id: string) {
+    try {
+      const response = await fetch(API_ENDPOINTS.CHARACTER_BY_ID(id));
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData, character: null };
+      }
+      const result = await response.json();
+      return { success: true, character: transformKeysToCamelCase(result) };
+    } catch (error) {
+      return { success: false, error: (error as Error).message, character: null };
+    }
+  },
+};
+

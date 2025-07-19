@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Bot, Sparkles, Save } from "lucide-react"
 import { GeneralInfoSection } from "@/components/generator/general-info-section"
@@ -10,8 +11,10 @@ import { LanguageStyleSection } from "@/components/generator/language-style-sect
 import { ScenarioSection } from "@/components/generator/scenario-section"
 import { RestrictionsSection } from "@/components/generator/restrictions-section"
 import { apiService } from "@/lib/api"
+import { toast } from "sonner"
 
 export default function GeneratorPage() {
+  const router = useRouter()
   const [formData, setFormData] = useState({
     // Общая информация
     name: "",
@@ -38,12 +41,12 @@ export default function GeneratorPage() {
     contextMemory: "",
 
     // Ограничения
-    contentFilter: "",
+    contentFilter: false, // Изменено на boolean
     forbiddenTopics: [] as string[],
     behaviorLimits: "",
   })
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: string, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
@@ -73,13 +76,15 @@ export default function GeneratorPage() {
   }
 
   const handleSave = async () => {
+    toast.info("Создание персонажа...")
     // @ts-ignore
     const response = await apiService.createCharacter(formData)
-    if (response.success) {
-      alert("Персонаж успешно создан! (симуляция)")
-      // TODO: Redirect to the new character's page or character list
+    if (response.success && response.character) {
+      toast.success("Персонаж успешно создан!")
+      router.push(`/chat/${response.character.id}`)
     } else {
-      alert("Ошибка при создании персонажа.")
+      toast.error("Ошибка при создании персонажа.")
+      console.error("Character creation failed:", response.error)
     }
   }
 
@@ -135,6 +140,7 @@ export default function GeneratorPage() {
           />
           <RestrictionsSection
             formData={formData}
+            // @ts-ignore
             handleInputChange={handleInputChange}
             handleArrayChange={handleArrayChange}
           />

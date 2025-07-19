@@ -28,12 +28,16 @@ export function CharacterCard({ character }: CharacterCardProps) {
         <p className="text-gray-600 text-sm leading-relaxed h-20 overflow-hidden">{character.description}</p>
 
         <div className="flex flex-wrap gap-2">
-          <Badge variant="secondary" className="bg-brand-100 text-brand-700">
-            {character.personality}
-          </Badge>
-          <Badge variant="secondary" className="bg-accent-100 text-accent-700">
-            {character.tone}
-          </Badge>
+          {character.tags?.[0] && (
+            <Badge variant="secondary" className="bg-brand-100 text-brand-700">
+              {character.tags[0]}
+            </Badge>
+          )}
+          {character.tags?.[1] && (
+            <Badge variant="secondary" className="bg-accent-100 text-accent-700">
+              {character.tags[1]}
+            </Badge>
+          )}
         </div>
 
         <div className="flex items-center justify-between text-sm text-gray-500">
