@@ -5,9 +5,9 @@ import { apiService } from "@/lib/api"
 
 export default function ChatPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
-  const { character } = use(apiService.getCharacter(id))
+  const response = use(apiService.getCharacter(id))
 
-  if (!character) {
+  if (!response.success || !response.character) {
     return <ApiPlaceholder
       title="Персонаж не найден"
       description="Не удалось найти персонажа с таким ID. Возможно, он был удален или вы перешли по неверной ссылке."
@@ -15,5 +15,5 @@ export default function ChatPage({ params }: { params: Promise<{ id: string }> }
     />
   }
 
-  return <ChatClientPage character={character} />
+  return <ChatClientPage character={response.character} />
 }

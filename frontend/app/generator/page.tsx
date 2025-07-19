@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"; //
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Bot, Sparkles, Save } from "lucide-react"
@@ -43,6 +44,8 @@ export default function GeneratorPage() {
     behaviorLimits: "",
   })
 
+  const router = useRouter(); //
+
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
@@ -81,6 +84,12 @@ export default function GeneratorPage() {
     } else {
       alert("Ошибка при создании персонажа.")
     }
+    if (response.success && response.characterId) { //
+      alert("Персонаж успешно создан!");
+      // Редирект на страницу персонажей
+      router.push("/characters");
+    }
+    //    
   }
 
   return (

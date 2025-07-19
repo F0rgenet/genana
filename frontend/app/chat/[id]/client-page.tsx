@@ -9,12 +9,20 @@ import { ChatCharacterInfo } from "@/components/chat/chat-character-info"
 import { ChatMessage } from "@/components/chat/chat-message"
 import { TypingIndicator } from "@/components/chat/typing-indicator"
 import { ChatInput } from "@/components/chat/chat-input"
+import { apiService } from "@/lib/api"
 
 interface ChatClientPageProps {
   character: Character
 }
 
 export function ChatClientPage({ character }: ChatClientPageProps) {
+  const backgroundStyle: React.CSSProperties | undefined = character.avatar
+    ? {
+        backgroundImage: `url(${character.avatar})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }
+    : undefined;
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
@@ -35,43 +43,98 @@ export function ChatClientPage({ character }: ChatClientPageProps) {
     scrollToBottom()
   }, [messages])
 
-  const handleSend = async () => {
-    if (!input.trim()) return
+  // const handleSend = async () => {
+  //   if (!input.trim()) return
 
+  //   const userMessage: Message = {
+  //     id: Date.now().toString(),
+  //     role: "user",
+  //     content: input,
+  //     timestamp: new Date(),
+  //   }
+
+  //   setMessages((prev) => [...prev, userMessage])
+  //   setInput("")
+  //   setIsTyping(true)
+
+  //   // Симуляция ответа ИИ
+  //   setTimeout(() => {
+  //     const responses = [
+  //       "Отличный вопрос! 🤔 Давай разберем это пошагово...",
+  //       "Понимаю тебя! Это действительно важная тема. Вот что я думаю...",
+  //       "Супер! 🎉 Ты задаешь правильные вопросы. Позволь объяснить...",
+  //       "Хм, интересно! 💡 Я помогу тебе с этим разобраться...",
+  //     ]
+
+  //     const assistantMessage: Message = {
+  //       id: (Date.now() + 1).toString(),
+  //       role: "assistant",
+  //       content: responses[Math.floor(Math.random() * responses.length)],
+  //       timestamp: new Date(),
+  //     }
+
+  //     setMessages((prev) => [...prev, assistantMessage])
+  //     setIsTyping(false)
+  //   }, 1500)
+  // }
+
+  const handleSend = async () => {
+    if (!input.trim()) return;
+  
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
       content: input,
       timestamp: new Date(),
-    }
-
-    setMessages((prev) => [...prev, userMessage])
-    setInput("")
-    setIsTyping(true)
-
-    // Симуляция ответа ИИ
-    setTimeout(() => {
-      const responses = [
-        "Отличный вопрос! 🤔 Давай разберем это пошагово...",
-        "Понимаю тебя! Это действительно важная тема. Вот что я думаю...",
-        "Супер! 🎉 Ты задаешь правильные вопросы. Позволь объяснить...",
-        "Хм, интересно! 💡 Я помогу тебе с этим разобраться...",
-      ]
-
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: responses[Math.floor(Math.random() * responses.length)],
-        timestamp: new Date(),
+    };
+  
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
+    setIsTyping(true);
+  
+    try {
+      // Подготавливаем историю для отправки
+      const history = messages.map(m => ({
+        role: m.role,
+        content: m.content
+      }));
+  
+      const response = await apiService.sendMessage({
+        characterId: character.id,
+        message: input,
+        history
+      });
+  
+      if (response.success) {
+        const assistantMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          role: "assistant",
+          content: response.response,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, assistantMessage]);
+      } else {
+        // Обработка ошибки
+        const errorMessage: Message = {
+          id: (Date.now() + 2).toString(),
+          role: "assistant",
+          content: "Извините, произошла ошибка. Попробуйте задать вопрос еще раз.",
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, errorMessage]);
       }
-
-      setMessages((prev) => [...prev, assistantMessage])
-      setIsTyping(false)
-    }, 1500)
-  }
+    } catch (error) {
+      console.error("Ошибка при отправке сообщения:", error);
+    } finally {
+      setIsTyping(false);
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-light">
+    <div
+      className="min-h-screen bg-gradient-light"
+      style={backgroundStyle}
+    >
       <ChatHeader character={character} />
 
       <div className="container mx-auto px-2 md:px-4 py-4 md:py-6 max-w-4xl">

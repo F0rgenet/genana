@@ -64,6 +64,17 @@ export function GeneralInfoSection({ formData, handleInputChange }: any) {
           />
         </div>
 
+        <div className="md:col-span-2"> 
+          <Label htmlFor="description">Описание внешности   персонажа</Label>
+          <Textarea
+            id="description"
+            value={formData.description}
+            onChange={(e) => handleInputChange("description", e.target.value)}
+            placeholder="Краткое описание внешности персонажа"
+            rows={3}
+          />
+        </div>
+
         <div>
           <Label>Язык общения</Label>
           <RadioGroup value={formData.language} onValueChange={(value) => handleInputChange("language", value)}>
