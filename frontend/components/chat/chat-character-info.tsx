@@ -14,23 +14,21 @@ export function ChatCharacterInfo({ character }: ChatCharacterInfoProps) {
         <LetterAvatar name={character.name} className="w-12 h-12" />
         <div className="flex-1">
           <h2 className="font-semibold text-lg">{character.name}</h2>
-          <div className="flex gap-2 mt-1">
-            <Badge variant="secondary" className="bg-brand-100 text-brand-700 text-xs">
-              {character.personality}
-            </Badge>
-            <Badge variant="secondary" className="bg-accent-100 text-accent-700 text-xs">
-              {character.tone}
-            </Badge>
+          <div className="flex flex-wrap gap-2 mt-1">
+            {character.tags?.slice(0, 2).map((tag, index) => (
+              <Badge
+                key={index}
+                variant="secondary"
+                className={
+                  index === 0
+                    ? "bg-brand-100 text-brand-700 text-xs"
+                    : "bg-accent-100 text-accent-700 text-xs"
+                }
+              >
+                {tag}
+              </Badge>
+            ))}
           </div>
-        </div>
-        <div className="text-right">
-          <Button
-            variant="outline"
-            size="sm"
-            className="text-xs border-brand-200 text-brand-600 hover:bg-brand-50 bg-transparent"
-          >
-            ⭐ Оставить отзыв
-          </Button>
         </div>
       </div>
     </div>

@@ -28,22 +28,6 @@ export function ChatHeader({ character }: ChatHeaderProps) {
             </div>
           </div>
         </div>
-
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="sm">
-              <MoreVertical className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem>
-              <Settings className="h-4 w-4 mr-2" />
-              Настройки чата
-            </DropdownMenuItem>
-            <DropdownMenuItem>Очистить историю</DropdownMenuItem>
-            <DropdownMenuItem>Экспорт чата</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
       </div>
     </header>
   )

@@ -28,19 +28,17 @@ export function ChatClientPage({ character }: ChatClientPageProps) {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
-  // Fetch chat history on initial load
   useEffect(() => {
     const fetchHistory = async () => {
       setIsLoadingHistory(true)
       const { success, messages: historyMessages, error } = await apiService.getChatHistory(character.id);
       if (success) {
-        // Add the initial greeting if history is empty
         if (historyMessages.length === 0) {
             setMessages([
                 {
                     id: "initial-greeting",
                     role: "assistant",
-                    content: `Привет! Я ${character.name}, твой помощник! 😊 Готов к общению?`,
+                    content: `Поприветствуйте помощника ${character.name}!`,
                     timestamp: new Date(),
                 },
             ]);
@@ -95,7 +93,6 @@ export function ChatClientPage({ character }: ChatClientPageProps) {
         title: "Ошибка отправки сообщения",
         description: `Не удалось получить ответ от ${character.name}. Пожалуйста, попробуйте еще раз.`,
       })
-      // Optional: remove the user's message if the API call fails
       setMessages((prev) => prev.filter((msg) => msg.id !== userMessage.id))
     }
   }

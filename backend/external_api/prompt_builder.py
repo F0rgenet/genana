@@ -53,29 +53,13 @@ def build_description_prompt(character_data: dict) -> str:
     """
     Constructs a prompt to generate a short, engaging character description in Russian.
     """
-    # Extract key characteristics, providing defaults for missing values
-    name = character_data.get('name', 'Неизвестный')
-    role = character_data.get('role', 'собеседник')
-    personality = character_data.get('personality_type', 'уникальный')
-    traits = ", ".join(character_data.get('character_traits', [])) or 'интересный'
-    tone = character_data.get('communication_tone', 'нейтральный')
-    tasks = ", ".join(character_data.get('main_tasks', [])) or 'вести беседу'
-
     prompt = f"""
 Задача: Напиши короткое, привлекательное и ясное описание для чат-бота на русском языке.
-Описание должно быть в одном абзаце, состоять из 2-3 предложений и не превышать 250 символов.
-Оно должно дать пользователю четкое представление о том, с кем он будет общаться.
+Описание должно быть в одном абзаце, состоять из 1-2 предложений и не превышать 150 символов.
+Оно должно дать пользователю четкое представление о том, с кем он будет общаться, без упоминания характеристик напрямую.
 
-Используй следующие характеристики:
-- **Имя:** {name}
-- **Роль:** {role}
-- **Личность:** {personality}, {traits}
-- **Стиль общения:** {tone}
-- **Основная задача:** {tasks}
+Характеристики: {character_data}
 
-Пример хорошего описания:
-"Познакомьтесь с {name}, вашим персональным {role}. Обладая {personality} характером, он поможет вам {tasks}, общаясь в {tone} манере. Начните диалог и узнайте больше!"
-
-Твой результат должен быть только текстом описания, без лишних фраз вроде "Вот описание:".
+Твой результат должен быть только текстом описания, без лишних фраз вроде "Вот описание:", только само описание!.
 """
     return prompt.strip()
