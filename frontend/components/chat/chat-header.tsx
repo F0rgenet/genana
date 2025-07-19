@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ArrowLeft, MoreVertical, Settings } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import type { Character } from "@/types/character"
+import { LetterAvatar } from "@/components/ui/letter-avatar"
 
 interface ChatHeaderProps {
   character: Character
@@ -20,12 +21,7 @@ export function ChatHeader({ character }: ChatHeaderProps) {
             </Button>
           </Link>
           <div className="flex items-center gap-3">
-            <Avatar className="w-10 h-10">
-              <AvatarImage src={character.avatar || "/placeholder.svg"} alt={character.name} />
-              <AvatarFallback className="bg-gradient-to-r from-brand-100 to-accent-100">
-                {character.name[0]}
-              </AvatarFallback>
-            </Avatar>
+            <LetterAvatar name={character.name} />
             <div>
               <h1 className="font-semibold text-lg">{character.name}</h1>
               <p className="text-sm text-gray-500">{character.role}</p>

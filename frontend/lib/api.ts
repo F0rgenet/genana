@@ -8,6 +8,8 @@ export const API_ENDPOINTS = {
   RECOMMENDED_CHARACTER: `${API_BASE_URL}/api/characters/recommended`,
   // Модели ИИ
   AI_MODELS: `${API_BASE_URL}/api/ai-models`,
+  // Чат
+  CHAT: (id: string) => `${API_BASE_URL}/api/chat/${id}`,
 };
 
 // Типы для API запросов
@@ -136,6 +138,35 @@ export const apiService = {
     } catch (error) {
       return { success: false, error: (error as Error).message, models: [] };
     }
+  },
+
+  // Отправка сообщения в чат
+  async sendChatMessage(id: string, message: string) {
+    try {
+      const response = await fetch(API_ENDPOINTS.CHAT(id), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message }),
+      });
+      if (!response.ok) {
+        const errorData = await response.json();
+        return { success: false, error: errorData };
+      }
+      const result = await response.json();
+      return { success: true, data: transformKeysToCamelCase(result) };
+    } catch (error) {
+      return { success: false, error: (error as Error).message };
+    }
+  },
+
+  // Получение истории чата (из данных персонажа)
+  async getChatHistory(id: string) {
+    const { success, character, error } = await this.getCharacter(id);
+    if (success && character && character.chatMessages) {
+      // Сообщения уже в camelCase благодаря transformKeysToCamelCase в getCharacter
+      return { success: true, messages: character.chatMessages };
+    }
+    return { success: false, error: error || "Chat history not found", messages: [] };
   },
 };
 

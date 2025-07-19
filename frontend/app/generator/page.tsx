@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Bot, Sparkles, Save } from "lucide-react"
+import { ArrowLeft, Bot, Sparkles, Save, Loader2 } from "lucide-react"
 import { GeneralInfoSection } from "@/components/generator/general-info-section"
 import { BehaviorSection } from "@/components/generator/behavior-section"
 import { LanguageStyleSection } from "@/components/generator/language-style-section"
@@ -15,6 +15,7 @@ import { toast } from "sonner"
 
 export default function GeneratorPage() {
   const router = useRouter()
+  const [isCreating, setIsCreating] = useState(false)
   const [formDisabled, setFormDisabled] = useState(true)
   const [formData, setFormData] = useState({
     // Общая информация
@@ -78,14 +79,21 @@ export default function GeneratorPage() {
   }
 
   const handleSave = async () => {
-    toast.info("Создание персонажа...")
+    setIsCreating(true)
+    toast.info("Создаём персонажа... Это может занять некоторое время.")
+    
     // @ts-ignore
     const response = await apiService.createCharacter(formData)
+    
+    setIsCreating(false)
+
     if (response.success && response.character) {
       toast.success("Персонаж успешно создан!")
       router.push(`/chat/${response.character.id}`)
     } else {
-      toast.error("Ошибка при создании персонажа.")
+      toast.error("Ошибка при создании персонажа.", {
+        description: "Пожалуйста, проверьте введенные данные и попробуйте снова.",
+      })
       console.error("Character creation failed:", response.error)
     }
   }
@@ -108,7 +116,7 @@ export default function GeneratorPage() {
             </div>
           </div>
           <div className="flex gap-2">
-            <Button onClick={handleSave} className="bg-gradient-brand hover:bg-gradient-brand-hover" disabled={formDisabled}>
+            <Button onClick={handleSave} className="bg-gradient-brand hover:bg-gradient-brand-hover" disabled={formDisabled || isCreating}>
               <Save className="h-4 w-4 mr-2" />
               Сохранить
             </Button>
@@ -157,7 +165,7 @@ export default function GeneratorPage() {
               size="lg"
               onClick={handleSave}
               className="bg-gradient-brand hover:bg-gradient-brand-hover"
-              disabled={formDisabled}
+              disabled={formDisabled || isCreating}
             >
               <Sparkles className="h-4 w-4 mr-2" />
               Создать персонажа
@@ -165,6 +173,17 @@ export default function GeneratorPage() {
           </div>
         </div>
       </div>
+
+      {/* Loading Modal */}
+      {isCreating && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center">
+          <div className="bg-white rounded-lg p-8 flex flex-col items-center gap-4 shadow-xl">
+            <Loader2 className="h-12 w-12 text-brand-600 animate-spin" />
+            <span className="text-xl font-semibold text-gray-700">Создаём персонажа...</span>
+            <p className="text-gray-500">Это может занять несколько секунд.</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

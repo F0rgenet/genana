@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { MessageCircle, Star } from "lucide-react"
 import type { Character } from "@/types/character"
+import { LetterAvatar } from "@/components/ui/letter-avatar"
 
 interface CharacterCardProps {
   character: Character
@@ -14,12 +15,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
   return (
     <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-brand-100">
       <CardHeader className="text-center">
-        <Avatar className="w-20 h-20 mx-auto mb-4">
-          <AvatarImage src={character.avatar || "/placeholder.svg"} alt={character.name} />
-          <AvatarFallback className="text-2xl bg-gradient-to-r from-brand-100 to-accent-100">
-            {character.name[0]}
-          </AvatarFallback>
-        </Avatar>
+        <LetterAvatar name={character.name} className="w-20 h-20 mx-auto mb-4 text-2xl" />
         <CardTitle className="text-xl">{character.name}</CardTitle>
         <CardDescription className="text-brand-600 font-medium">{character.role}</CardDescription>
       </CardHeader>

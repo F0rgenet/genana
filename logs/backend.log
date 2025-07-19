@@ -510,3 +510,872 @@
 2025-07-19 15:27:10.991 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
 2025-07-19 15:27:10.991 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
 2025-07-19 15:27:10.992 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:44:55.435 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:44:55.436 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:44:55.534 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:44:58.181 | INFO     | backend.main:get_ai_models_endpoint:85 - Fetching available AI models.
+2025-07-19 15:44:58.182 | DEBUG    | backend.main:get_ai_models_endpoint:88 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:45:14.887 | INFO     | backend.main:create_character_endpoint:36 - Creating character with name: ТЕСТ
+2025-07-19 15:45:14.887 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'ТЕСТ', 'role': 'Проверка', 'ai_model': 'Gen-AI-4o-mini', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': 'INFJ', 'character_traits': ['Поддерживающий', 'Спокойный'], 'communication_tone': 'formal', 'initiative_level': 'high', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Поддерживающий'], 'description': None}
+2025-07-19 15:45:14.948 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:14.948 | INFO     | backend.main:create_character_endpoint:51 - Character ТЕСТ created with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:14.949 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:45:17.023 | INFO     | backend.main:get_character_endpoint:75 - Fetching character with id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:17.024 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:17.030 | DEBUG    | backend.main:get_character_endpoint:80 - Found character with id e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:17.031 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:45:19.782 | INFO     | backend.main:get_characters_endpoint:56 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:45:19.782 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:45:19.784 | DEBUG    | backend.main:get_characters_endpoint:58 - Found 1 characters.
+2025-07-19 15:45:19.785 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:45:19.791 | INFO     | backend.main:get_recommended_character_endpoint:63 - Fetching recommended character.
+2025-07-19 15:45:19.791 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:45:19.792 | INFO     | backend.main:get_recommended_character_endpoint:69 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:45:19.793 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:48:40.238 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:48:40.239 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:48:40.241 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:49:09.082 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:49:09.082 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:49:09.083 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:49:27.077 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:49:27.077 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:49:27.078 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:50:40.054 | INFO     | backend.main:on_startup:31 - Starting up and creating database tables.
+2025-07-19 15:50:40.054 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:50:40.055 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:50:45.005 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:50:45.005 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:50:45.007 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:50:49.370 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:50:49.371 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:50:49.378 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:50:49.379 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['Gen-AI-4o', 'Gen-AI-4o-mini']
+2025-07-19 15:50:53.190 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:50:53.190 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:50:53.192 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:52:07.644 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:52:07.644 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:52:07.646 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:54:45.198 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:54:45.199 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:54:45.200 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:54:53.630 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:54:53.630 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:54:53.632 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:54:59.281 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:54:59.281 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:54:59.283 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:56:50.156 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:56:50.157 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:56:50.159 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:56:59.393 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:56:59.393 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:56:59.401 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:56:59.401 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:57:09.679 | INFO     | backend.main:create_character_endpoint:39 - Creating character with name: Человек паук
+2025-07-19 15:57:09.679 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Человек паук', 'role': 'Проверятель', 'ai_model': 'mistral-large-latest', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 15:57:09.703 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.703 | INFO     | backend.main:create_character_endpoint:54 - Character Человек паук created with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.704 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:57:09.788 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.789 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.793 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.794 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:57:09.978 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.978 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.979 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.980 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:57:09.999 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:09.999 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:10.000 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:10.001 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:57:12.640 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:12.640 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:57:12.641 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e241d729-477a-40b3-b91e-42dcb726c893 with skip: 0, limit: 20
+2025-07-19 15:57:12.643 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: mistral-large-latest
+2025-07-19 15:57:12.643 | ERROR    | backend.main:chat_with_character_endpoint:124 - Failed to get LLM client for model mistral-large-latest: API key for MistralClient is not set.
+2025-07-19 15:57:12.643 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:15.351 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:15.352 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:15.353 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e241d729-477a-40b3-b91e-42dcb726c893 with skip: 0, limit: 20
+2025-07-19 15:58:15.353 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: mistral-large-latest
+2025-07-19 15:58:15.354 | ERROR    | backend.main:chat_with_character_endpoint:124 - Failed to get LLM client for model mistral-large-latest: API key for MistralClient is not set.
+2025-07-19 15:58:15.354 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:19.136 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 15:58:19.136 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 15:58:19.138 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 15:58:21.898 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:21.899 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:21.911 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e241d729-477a-40b3-b91e-42dcb726c893 with skip: 0, limit: 20
+2025-07-19 15:58:21.914 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: mistral-large-latest
+2025-07-19 15:58:23.029 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'e241d729-477a-40b3-b91e-42dcb726c893', 'role': 'user', 'content': 'ЫВАЛВЫАЛ'}
+2025-07-19 15:58:23.048 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: f35d3e18-d3da-47ad-9ad1-f86be09a2be5
+2025-07-19 15:58:23.048 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'e241d729-477a-40b3-b91e-42dcb726c893', 'role': 'assistant', 'content': 'Привет! Как я могу помочь?'}
+2025-07-19 15:58:23.063 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: a04b0c1f-21ab-4993-a717-66fae7f11ecb
+2025-07-19 15:58:23.064 | INFO     | backend.main:chat_with_character_endpoint:150 - Successfully generated response for character e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:23.065 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:32.423 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:32.424 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:32.424 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e241d729-477a-40b3-b91e-42dcb726c893 with skip: 0, limit: 20
+2025-07-19 15:58:32.425 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: mistral-large-latest
+2025-07-19 15:58:33.427 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'e241d729-477a-40b3-b91e-42dcb726c893', 'role': 'user', 'content': 'Привет бублик пупсик ты работаешь? да?'}
+2025-07-19 15:58:33.441 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: 4f49884c-4a7c-4e37-8a0e-da078b8e7461
+2025-07-19 15:58:33.442 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'e241d729-477a-40b3-b91e-42dcb726c893', 'role': 'assistant', 'content': 'Привет! Да, я работаю. Как я могу помочь?'}
+2025-07-19 15:58:33.454 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: 7e803f44-e483-4b44-aa4d-5742b418fd9e
+2025-07-19 15:58:33.454 | INFO     | backend.main:chat_with_character_endpoint:150 - Successfully generated response for character e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 15:58:33.455 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:37.067 | INFO     | backend.main:get_characters_endpoint:59 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:58:37.067 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:58:37.071 | DEBUG    | backend.main:get_characters_endpoint:61 - Found 2 characters.
+2025-07-19 15:58:37.073 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:37.080 | INFO     | backend.main:get_recommended_character_endpoint:66 - Fetching recommended character.
+2025-07-19 15:58:37.080 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:58:37.081 | INFO     | backend.main:get_recommended_character_endpoint:72 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:58:37.081 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:42.448 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:58:42.448 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:58:42.449 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:58:42.449 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:58:49.920 | INFO     | backend.main:create_character_endpoint:39 - Creating character with name: гемини
+2025-07-19 15:58:49.921 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'гемини', 'role': 'тестировщик', 'ai_model': 'gemini-1.5-pro-latest', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': '', 'character_traits': [], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': [], 'description': None}
+2025-07-19 15:58:49.937 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:49.937 | INFO     | backend.main:create_character_endpoint:54 - Character гемини created with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:49.937 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:49.992 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:49.992 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:49.993 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:49.994 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:50.073 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.073 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.075 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.076 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:50.100 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.100 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.101 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:50.102 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:58:54.259 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:54.260 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:58:54.261 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: 37f690fd-859a-4c89-a2ae-9af9b1119185 with skip: 0, limit: 20
+2025-07-19 15:58:54.261 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: gemini-1.5-pro-latest
+2025-07-19 15:58:55.168 | ERROR    | backend.external_api.llm:generate_text:72 - Gemini API Error: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "4s"
+      }
+    ]
+  }
+}
+
+2025-07-19 15:58:55.169 | ERROR    | backend.main:chat_with_character_endpoint:135 - Error during text generation with gemini-1.5-pro-latest: Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AIzaSyBshrUus6KpGjQkOphUZSa52DYfcOQm9EQ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-07-19 15:58:55.169 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:59:05.232 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:59:05.232 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 15:59:05.233 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: 37f690fd-859a-4c89-a2ae-9af9b1119185 with skip: 0, limit: 20
+2025-07-19 15:59:05.233 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: gemini-1.5-pro-latest
+2025-07-19 15:59:06.022 | ERROR    | backend.external_api.llm:generate_text:72 - Gemini API Error: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "54s"
+      }
+    ]
+  }
+}
+
+2025-07-19 15:59:06.022 | ERROR    | backend.main:chat_with_character_endpoint:135 - Error during text generation with gemini-1.5-pro-latest: Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AIzaSyBshrUus6KpGjQkOphUZSa52DYfcOQm9EQ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-07-19 15:59:06.023 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:59:52.577 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:59:52.577 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:59:52.587 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 15:59:52.587 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 15:59:54.921 | INFO     | backend.main:get_characters_endpoint:59 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 15:59:54.921 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 15:59:54.923 | DEBUG    | backend.main:get_characters_endpoint:61 - Found 3 characters.
+2025-07-19 15:59:54.923 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 15:59:54.929 | INFO     | backend.main:get_recommended_character_endpoint:66 - Fetching recommended character.
+2025-07-19 15:59:54.929 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 15:59:54.930 | INFO     | backend.main:get_recommended_character_endpoint:72 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 15:59:54.931 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:03.650 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 16:01:03.650 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:01:03.652 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:01:04.974 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:04.974 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:04.985 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:04.986 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:05.097 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.098 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.100 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.100 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:05.105 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.105 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.106 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:05.107 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:08.622 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:08.623 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:08.624 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e5f8598a-b824-4118-99ac-b815d7f8d23a with skip: 0, limit: 20
+2025-07-19 16:01:08.626 | ERROR    | backend.main:chat_with_character_endpoint:124 - Failed to get LLM client for model Gen-AI-4o-mini: Unsupported AI model: Gen-AI-4o-mini
+2025-07-19 16:01:08.626 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:14.969 | INFO     | backend.main:get_characters_endpoint:59 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:01:14.969 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:01:14.971 | DEBUG    | backend.main:get_characters_endpoint:61 - Found 3 characters.
+2025-07-19 16:01:14.971 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:14.976 | INFO     | backend.main:get_recommended_character_endpoint:66 - Fetching recommended character.
+2025-07-19 16:01:14.976 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:01:14.977 | INFO     | backend.main:get_recommended_character_endpoint:72 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:01:14.977 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:16.370 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 16:01:16.370 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:01:16.378 | INFO     | backend.main:get_ai_models_endpoint:88 - Fetching available AI models.
+2025-07-19 16:01:16.379 | DEBUG    | backend.main:get_ai_models_endpoint:90 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:01:54.609 | INFO     | backend.main:create_character_endpoint:39 - Creating character with name: Анна
+2025-07-19 16:01:54.609 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Анна', 'role': 'Помощник', 'ai_model': 'gemini-1.5-pro-latest', 'format': 'telegram-bot', 'target_audience': 'Родители', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENTP', 'character_traits': ['Дружелюбный', 'Поддерживающий', 'Эмпатичный'], 'communication_tone': 'friendly', 'initiative_level': 'low', 'formality': 'informal', 'language_complexity': 'medium', 'use_emoji': 'moderate', 'typical_phrases': ['Ек макарек'], 'main_tasks': ['Помощь в обучении', 'Развлечение', 'Напоминания'], 'context_memory': '', 'content_filter': True, 'forbidden_topics': ['Политика', 'Насилие', 'Медицинские советы'], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Помощь в обучении'], 'description': None}
+2025-07-19 16:01:54.662 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.662 | INFO     | backend.main:create_character_endpoint:54 - Character Анна created with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.663 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:54.711 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.711 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.712 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.713 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:54.814 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.814 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.815 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.816 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:54.822 | INFO     | backend.main:get_character_endpoint:78 - Fetching character with id: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.822 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.823 | DEBUG    | backend.main:get_character_endpoint:83 - Found character with id e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:54.824 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:01:57.813 | INFO     | backend.main:chat_with_character_endpoint:105 - Received chat request for character_id: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:57.813 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f
+2025-07-19 16:01:57.814 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: e1f364fb-a48f-4cae-9d15-c280fee29d9f with skip: 0, limit: 20
+2025-07-19 16:01:57.815 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: gemini-1.5-pro-latest
+2025-07-19 16:01:59.082 | ERROR    | backend.external_api.llm:generate_text:72 - Gemini API Error: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "0s"
+      }
+    ]
+  }
+}
+
+2025-07-19 16:01:59.082 | ERROR    | backend.main:chat_with_character_endpoint:135 - Error during text generation with gemini-1.5-pro-latest: Client error '429 Too Many Requests' for url 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=AIzaSyCMoHsu8H2IGlYBYkvpSx9L-29qJbIcS1Y'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-07-19 16:01:59.083 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:02:08.146 | INFO     | backend.main:on_startup:34 - Starting up and creating database tables.
+2025-07-19 16:02:08.146 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:02:08.148 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:03:41.765 | INFO     | backend.main:on_startup:35 - Starting up and creating database tables.
+2025-07-19 16:03:41.766 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:03:41.767 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:03:43.032 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:03:43.032 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:03:43.043 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 4 characters.
+2025-07-19 16:03:43.044 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:43.048 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:03:43.048 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:03:43.049 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:03:43.049 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:44.712 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:03:44.712 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:03:44.716 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:03:44.716 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-1.5-pro-latest', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:03:56.397 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Проверка
+2025-07-19 16:03:56.398 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проверка', 'role': 'Тестировщик', 'ai_model': 'gemini-1.5-pro-latest', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENTJ', 'character_traits': ['Энергичный', 'Саркастичный'], 'communication_tone': '', 'initiative_level': '', 'formality': '', 'language_complexity': '', 'use_emoji': '', 'typical_phrases': [], 'main_tasks': [], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Энергичный'], 'description': None}
+2025-07-19 16:03:56.416 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.416 | INFO     | backend.main:create_character_endpoint:55 - Character Проверка created with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.417 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:56.496 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.496 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.499 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.500 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:56.585 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.586 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.587 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.588 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:56.597 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.597 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.598 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:56.599 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:03:58.741 | INFO     | backend.main:chat_with_character_endpoint:106 - Received chat request for character_id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:58.741 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:03:58.742 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: da256d6b-48fb-4e54-96ef-16fec5896cc8 with skip: 0, limit: 20
+2025-07-19 16:03:58.743 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: gemini-1.5-pro-latest
+2025-07-19 16:03:59.321 | ERROR    | backend.external_api.llm:generate_text:72 - Gemini API Error: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "0s"
+      }
+    ]
+  }
+}
+
+2025-07-19 16:03:59.321 | WARNING  | backend.main:chat_with_character_endpoint:137 - Rate limit exceeded for model gemini-1.5-pro-latest. Details: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-1.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "0s"
+      }
+    ]
+  }
+}
+
+2025-07-19 16:03:59.321 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:40.479 | INFO     | backend.main:on_startup:35 - Starting up and creating database tables.
+2025-07-19 16:06:40.480 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:06:40.482 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:06:42.403 | INFO     | backend.main:on_startup:35 - Starting up and creating database tables.
+2025-07-19 16:06:42.404 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:06:42.405 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:06:50.200 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:06:50.201 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:06:50.201 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:06:50.213 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:06:50.221 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:06:50.222 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.222 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:06:50.224 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.251 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:06:50.252 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:06:50.253 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:50.253 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.454 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:06:50.454 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:06:50.455 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:50.456 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.607 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:06:50.607 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:06:50.608 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:06:50.608 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.617 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:06:50.617 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:06:50.618 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:50.619 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.678 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:06:50.679 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:06:50.680 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:06:50.680 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:50.686 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:06:50.686 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:06:50.687 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:50.687 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:55.551 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:55.551 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:55.554 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:55.555 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:58.283 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:06:58.284 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:06:58.288 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:06:58.289 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:06:59.893 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:06:59.893 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:06:59.894 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:06:59.894 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:06:59.903 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:06:59.904 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:06:59.904 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:06:59.905 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:01.939 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:01.939 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:01.940 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:01.940 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:02.030 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.031 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.032 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.033 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:02.039 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.040 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.041 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 37f690fd-859a-4c89-a2ae-9af9b1119185
+2025-07-19 16:07:02.041 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:03.238 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:07:03.238 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:07:03.239 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:07:03.240 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:03.244 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:07:03.245 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:07:03.245 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:07:03.246 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:05.260 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.260 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.261 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.262 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:05.347 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.347 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.348 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.349 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:05.354 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.354 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.355 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:05.356 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:07.120 | INFO     | backend.main:chat_with_character_endpoint:106 - Received chat request for character_id: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:07.121 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: da256d6b-48fb-4e54-96ef-16fec5896cc8
+2025-07-19 16:07:07.122 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: da256d6b-48fb-4e54-96ef-16fec5896cc8 with skip: 0, limit: 20
+2025-07-19 16:07:07.123 | ERROR    | backend.main:chat_with_character_endpoint:125 - Failed to get LLM client for model gemini-1.5-pro-latest: Unsupported AI model: gemini-1.5-pro-latest
+2025-07-19 16:07:07.124 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:08.358 | INFO     | backend.main:get_characters_endpoint:60 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:07:08.359 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:07:08.360 | DEBUG    | backend.main:get_characters_endpoint:62 - Found 5 characters.
+2025-07-19 16:07:08.360 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:08.367 | INFO     | backend.main:get_recommended_character_endpoint:67 - Fetching recommended character.
+2025-07-19 16:07:08.367 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:07:08.368 | INFO     | backend.main:get_recommended_character_endpoint:73 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:07:08.368 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:14.844 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:07:14.844 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:07:14.850 | INFO     | backend.main:get_ai_models_endpoint:89 - Fetching available AI models.
+2025-07-19 16:07:14.850 | DEBUG    | backend.main:get_ai_models_endpoint:91 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:07:42.815 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Проерка
+2025-07-19 16:07:42.815 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Проерка', 'role': 'теыттеыт', 'ai_model': 'gemini-2.5-flash', 'format': 'ai-visual', 'target_audience': 'тест', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENTP', 'character_traits': ['Дружелюбный', 'Спокойный'], 'communication_tone': 'formal', 'initiative_level': 'high', 'formality': 'informal', 'language_complexity': 'simple', 'use_emoji': 'no', 'typical_phrases': ['дабстеп моё всё'], 'main_tasks': ['Приветствие новых пользователей', 'Консультации'], 'context_memory': '', 'content_filter': False, 'forbidden_topics': [], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Приветствие новых пользователей'], 'description': None}
+2025-07-19 16:07:42.868 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:42.868 | INFO     | backend.main:create_character_endpoint:55 - Character Проерка created with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:42.869 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:42.926 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:42.927 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:42.928 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:42.928 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:43.000 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.000 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.002 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.003 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:43.033 | INFO     | backend.main:get_character_endpoint:79 - Fetching character with id: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.033 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.034 | DEBUG    | backend.main:get_character_endpoint:84 - Found character with id 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:43.035 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:07:45.328 | INFO     | backend.main:chat_with_character_endpoint:106 - Received chat request for character_id: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:45.328 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:45.330 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: 209e1067-cd44-4bdd-9c07-9bdcb58e567d with skip: 0, limit: 20
+2025-07-19 16:07:45.331 | INFO     | backend.external_api.llm:get_client:133 - Initializing LLM client for model: gemini-2.5-flash
+2025-07-19 16:07:47.249 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': '209e1067-cd44-4bdd-9c07-9bdcb58e567d', 'role': 'user', 'content': 'Привет!'}
+2025-07-19 16:07:47.265 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: c634cd72-2f47-48f9-b732-8e8647731b97
+2025-07-19 16:07:47.265 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': '209e1067-cd44-4bdd-9c07-9bdcb58e567d', 'role': 'assistant', 'content': 'Привет! Рад видеть тебя здесь. Меня зовут Проерка. Если у тебя есть вопросы или нужна помощь, не стесняйся, обращайся. дабстеп моё всё.'}
+2025-07-19 16:07:47.278 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: bfff1507-d001-409e-b427-07abc7b10666
+2025-07-19 16:07:47.278 | INFO     | backend.main:chat_with_character_endpoint:158 - Successfully generated response for character 209e1067-cd44-4bdd-9c07-9bdcb58e567d
+2025-07-19 16:07:47.279 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:11:29.453 | INFO     | backend.main:on_startup:35 - Starting up and creating database tables.
+2025-07-19 16:11:29.454 | INFO     | backend.database.database:create_db_and_tables:31 - Creating database and tables.
+2025-07-19 16:11:29.456 | INFO     | backend.database.database:create_db_and_tables:33 - Database and tables created.
+2025-07-19 16:11:30.317 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:11:30.317 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:11:30.331 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:11:30.331 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:12:24.659 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Человек-паук
+2025-07-19 16:12:24.660 | INFO     | backend.main:create_character_endpoint:45 - Description is missing, generating a new one...
+2025-07-19 16:12:24.660 | INFO     | backend.external_api.llm:generate_description:145 - Generating description for character: Человек-паук
+2025-07-19 16:12:30.906 | INFO     | backend.external_api.llm:generate_description:162 - Successfully generated description: Знакомьтесь: Человек-паук, ваш личный помощник по автомобилям! Спокойный и эмпатичный ENTP, он дружелюбно поможет с напоминаниями, ответами на FAQ и консультациями. Начните общаться!
+2025-07-19 16:12:30.906 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Человек-паук', 'role': 'Помощник по автомобилям', 'ai_model': 'gemini-2.5-flash', 'format': '', 'target_audience': 'Родители', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENTP', 'character_traits': ['Дружелюбный', 'Эмпатичный', 'Спокойный'], 'communication_tone': 'friendly', 'initiative_level': 'high', 'formality': 'informal', 'language_complexity': 'simple', 'use_emoji': 'yes', 'typical_phrases': ['Я мачупикча'], 'main_tasks': ['Напоминания', 'Ответы на FAQ', 'Консультации'], 'context_memory': '', 'content_filter': True, 'forbidden_topics': ['Политика', 'Личная информация', 'Медицинские советы'], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Напоминания'], 'description': 'Знакомьтесь: Человек-паук, ваш личный помощник по автомобилям! Спокойный и эмпатичный ENTP, он дружелюбно поможет с напоминаниями, ответами на FAQ и консультациями. Начните общаться!'}
+2025-07-19 16:12:30.933 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:30.933 | INFO     | backend.main:create_character_endpoint:61 - Character Человек-паук created with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:30.934 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:12:31.007 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.007 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.010 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.011 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:12:31.080 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.080 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.081 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.082 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:12:31.110 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.110 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.112 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:12:31.113 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:12:33.319 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:12:33.319 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:12:33.321 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 7 characters.
+2025-07-19 16:12:33.322 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:12:33.330 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:12:33.331 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:12:33.332 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:12:33.332 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:18.309 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.309 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.311 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.312 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:18.433 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.433 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.435 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.436 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:18.478 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.478 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.480 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:18.481 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:21.059 | INFO     | backend.main:chat_with_character_endpoint:112 - Received chat request for character_id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:21.059 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:21.060 | DEBUG    | backend.database.crud:get_chat_messages_by_character:63 - Fetching chat messages for character ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172 with skip: 0, limit: 20
+2025-07-19 16:13:21.062 | INFO     | backend.external_api.llm:get_client:134 - Initializing LLM client for model: gemini-2.5-flash
+2025-07-19 16:13:23.409 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'ec5ea51d-a78f-47fe-a573-8f6ab93a2172', 'role': 'user', 'content': 'Кто ты?'}
+2025-07-19 16:13:23.424 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: 5c165b1a-c163-4afd-8e8c-0314c8bfd1c4
+2025-07-19 16:13:23.424 | DEBUG    | backend.database.crud:create_chat_message:54 - Creating chat message with data: {'character_id': 'ec5ea51d-a78f-47fe-a573-8f6ab93a2172', 'role': 'assistant', 'content': 'Привет! 👋 Я Человек-паук, но не тот, что летает на паутине по Нью-Йорку, а тот, что всегда готов помочь родителям с их железными конями! 🚗💨\n\nЯ здесь, чтобы помогать тебе с напоминаниями, отвечать на вопросы о машинах и давать советы. В общем, я твой дружелюбный помощник по автомобилям! Чем могу помочь? 😊'}
+2025-07-19 16:13:23.437 | DEBUG    | backend.database.crud:create_chat_message:59 - Chat message created with ID: 030c1251-0fbf-4213-9265-30e6dece0549
+2025-07-19 16:13:23.437 | INFO     | backend.main:chat_with_character_endpoint:164 - Successfully generated response for character ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:13:23.437 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:31.577 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:13:31.577 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:13:31.578 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 7 characters.
+2025-07-19 16:13:31.579 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:13:31.587 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:13:31.587 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:13:31.588 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:13:31.588 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:14:07.884 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:14:07.885 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:14:07.906 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:14:07.906 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:15:01.210 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Отец
+2025-07-19 16:15:01.210 | INFO     | backend.main:create_character_endpoint:45 - Description is missing, generating a new one...
+2025-07-19 16:15:01.211 | INFO     | backend.external_api.llm:generate_description:145 - Generating description for character: Отец
+2025-07-19 16:15:01.970 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Отец
+2025-07-19 16:15:01.970 | INFO     | backend.main:create_character_endpoint:45 - Description is missing, generating a new one...
+2025-07-19 16:15:01.970 | INFO     | backend.external_api.llm:generate_description:145 - Generating description for character: Отец
+2025-07-19 16:15:05.935 | INFO     | backend.main:create_character_endpoint:40 - Creating character with name: Отец
+2025-07-19 16:15:05.935 | INFO     | backend.main:create_character_endpoint:45 - Description is missing, generating a new one...
+2025-07-19 16:15:05.935 | INFO     | backend.external_api.llm:generate_description:145 - Generating description for character: Отец
+2025-07-19 16:15:09.421 | INFO     | backend.external_api.llm:generate_description:162 - Successfully generated description: Привет, я Отец! Твой Уходит за хлебом, но всегда на связи. Я ENFJ-бот, дружелюбный и энергичный, готовый помочь с обучением, дать совет или просто развлечь саркастичной шуткой. Давай общаться!
+2025-07-19 16:15:09.421 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Отец', 'role': 'Уходит за хлебом', 'ai_model': 'gemini-2.5-flash', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENFJ', 'character_traits': ['Дружелюбный', 'Энергичный', 'Саркастичный', 'Креативный'], 'communication_tone': 'friendly', 'initiative_level': 'high', 'formality': 'semi-formal', 'language_complexity': 'simple', 'use_emoji': 'yes', 'typical_phrases': ['Я маквин'], 'main_tasks': ['Помощь в обучении', 'Консультации', 'Развлечение'], 'context_memory': '', 'content_filter': True, 'forbidden_topics': ['Политика', 'Насилие', 'Наркотики'], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Помощь в обучении'], 'description': 'Привет, я Отец! Твой Уходит за хлебом, но всегда на связи. Я ENFJ-бот, дружелюбный и энергичный, готовый помочь с обучением, дать совет или просто развлечь саркастичной шуткой. Давай общаться!'}
+2025-07-19 16:15:09.438 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.438 | INFO     | backend.main:create_character_endpoint:61 - Character Отец created with ID: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.438 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.526 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.526 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.527 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.528 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.640 | INFO     | backend.external_api.llm:generate_description:162 - Successfully generated description: Знакомьтесь, Отец! Я ваш ENFJ-помощник, который «ушел за хлебом», но всегда на связи. Дружелюбный, энергичный и креативный, с сарказмом помогу в обучении, дам консультацию и развлеку!
+2025-07-19 16:15:09.640 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Отец', 'role': 'Уходит за хлебом', 'ai_model': 'gemini-2.5-flash', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENFJ', 'character_traits': ['Дружелюбный', 'Энергичный', 'Саркастичный', 'Креативный'], 'communication_tone': 'friendly', 'initiative_level': 'high', 'formality': 'semi-formal', 'language_complexity': 'simple', 'use_emoji': 'yes', 'typical_phrases': ['Я маквин'], 'main_tasks': ['Помощь в обучении', 'Консультации', 'Развлечение'], 'context_memory': '', 'content_filter': True, 'forbidden_topics': ['Политика', 'Насилие', 'Наркотики'], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Помощь в обучении'], 'description': 'Знакомьтесь, Отец! Я ваш ENFJ-помощник, который «ушел за хлебом», но всегда на связи. Дружелюбный, энергичный и креативный, с сарказмом помогу в обучении, дам консультацию и развлеку!'}
+2025-07-19 16:15:09.661 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.661 | INFO     | backend.main:create_character_endpoint:61 - Character Отец created with ID: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.664 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.666 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.667 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.668 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.670 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.678 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.679 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.681 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 1ddb89b3-dae8-493a-8df4-b397b71d60ec
+2025-07-19 16:15:09.683 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.724 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.724 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.725 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.726 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.814 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.814 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.815 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.816 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:09.825 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.825 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.827 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 185fdc11-80ef-4eea-9f04-3bcfea996bd6
+2025-07-19 16:15:09.828 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:16.176 | INFO     | backend.external_api.llm:generate_description:162 - Successfully generated description: Знакомьтесь: Отец! Он "ушел за хлебом", но всегда на связи, чтобы помочь вам учиться, консультировать и развлекать. Этот энергичный ENFJ с сарказмом станет вашим дружелюбным собеседником.
+2025-07-19 16:15:16.176 | DEBUG    | backend.database.crud:create_character:12 - Creating character with data: {'name': 'Отец', 'role': 'Уходит за хлебом', 'ai_model': 'gemini-2.5-flash', 'format': '', 'target_audience': '', 'language': 'russian', 'custom_language': '', 'personality_type': 'ENFJ', 'character_traits': ['Дружелюбный', 'Энергичный', 'Саркастичный', 'Креативный'], 'communication_tone': 'friendly', 'initiative_level': 'high', 'formality': 'semi-formal', 'language_complexity': 'simple', 'use_emoji': 'yes', 'typical_phrases': ['Я маквин'], 'main_tasks': ['Помощь в обучении', 'Консультации', 'Развлечение'], 'context_memory': '', 'content_filter': True, 'forbidden_topics': ['Политика', 'Насилие', 'Наркотики'], 'behavior_limits': '', 'avatar_url': None, 'tags': ['Дружелюбный', 'Помощь в обучении'], 'description': 'Знакомьтесь: Отец! Он ушел за хлебом, но всегда на связи, чтобы помочь вам учиться, консультировать и развлекать. Этот энергичный ENFJ с сарказмом станет вашим дружелюбным собеседником.'}
+2025-07-19 16:15:16.191 | DEBUG    | backend.database.crud:create_character:17 - Character created with ID: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.191 | INFO     | backend.main:create_character_endpoint:61 - Character Отец created with ID: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.192 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:16.241 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.241 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.242 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.243 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:16.368 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.369 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.370 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.371 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:16.388 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.388 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.390 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id 082c302a-71e7-4a12-af67-896365df6e05
+2025-07-19 16:15:16.391 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:29.120 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:15:29.120 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:15:29.121 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:15:29.122 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:29.127 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:15:29.128 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:15:29.128 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:15:29.129 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:31.337 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:15:31.337 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:15:31.361 | INFO     | backend.main:get_ai_models_endpoint:95 - Fetching available AI models.
+2025-07-19 16:15:31.361 | DEBUG    | backend.main:get_ai_models_endpoint:97 - Returning AI models: ['gemini-2.5-flash', 'mistral-large-latest', 'mistral-small-latest']
+2025-07-19 16:15:34.472 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:15:34.472 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:15:34.473 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:15:34.474 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:15:34.480 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:15:34.480 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:15:34.481 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:15:34.482 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:18:34.806 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.806 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.808 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.808 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:18:34.922 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.923 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.924 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.925 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:18:34.930 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.931 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.931 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id ec5ea51d-a78f-47fe-a573-8f6ab93a2172
+2025-07-19 16:18:34.932 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:18:38.860 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:18:38.860 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:18:38.862 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:18:38.863 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:18:38.874 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:18:38.874 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:18:38.874 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:18:38.875 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:15.603 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:19:15.603 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:19:15.605 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:19:15.606 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:15.614 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:19:15.614 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:19:15.615 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:19:15.615 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:26.318 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:19:26.318 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:19:26.320 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:19:26.321 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:26.327 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:19:26.327 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:19:26.328 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:19:26.329 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:37.833 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:19:37.833 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:19:37.834 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:19:37.835 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:37.842 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:19:37.842 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:19:37.843 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:19:37.844 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:42.599 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.599 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.601 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.602 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:42.831 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.831 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.832 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.833 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:42.839 | INFO     | backend.main:get_character_endpoint:85 - Fetching character with id: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.839 | DEBUG    | backend.database.crud:get_character:21 - Fetching character with ID: e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.840 | DEBUG    | backend.main:get_character_endpoint:90 - Found character with id e241d729-477a-40b3-b91e-42dcb726c893
+2025-07-19 16:19:42.841 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:44.580 | INFO     | backend.main:get_characters_endpoint:66 - Fetching characters with skip: 0 and limit: 100
+2025-07-19 16:19:44.580 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 100
+2025-07-19 16:19:44.582 | DEBUG    | backend.main:get_characters_endpoint:68 - Found 10 characters.
+2025-07-19 16:19:44.583 | DEBUG    | backend.database.database:get_db:41 - Closing database session.
+2025-07-19 16:19:44.589 | INFO     | backend.main:get_recommended_character_endpoint:73 - Fetching recommended character.
+2025-07-19 16:19:44.590 | DEBUG    | backend.database.crud:get_characters:25 - Fetching characters with skip: 0, limit: 1
+2025-07-19 16:19:44.590 | INFO     | backend.main:get_recommended_character_endpoint:79 - Recommending character with ID: e5f8598a-b824-4118-99ac-b815d7f8d23a
+2025-07-19 16:19:44.591 | DEBUG    | backend.database.database:get_db:41 - Closing database session.

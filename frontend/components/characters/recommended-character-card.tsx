@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { MessageCircle } from "lucide-react"
 import type { Character } from "@/types/character"
+import { LetterAvatar } from "@/components/ui/letter-avatar"
 
 interface RecommendedCharacterCardProps {
   character: Character
@@ -15,12 +16,7 @@ export function RecommendedCharacterCard({ character }: RecommendedCharacterCard
     <Card className="max-w-2xl mx-auto border-2 border-brand-200 bg-gradient-to-r from-brand-50 to-accent-50 shadow-lg">
       <CardContent className="p-6">
         <div className="flex flex-col md:flex-row items-center gap-6">
-          <Avatar className="w-24 h-24 md:w-32 md:h-32">
-            <AvatarImage src={character.avatar || "/placeholder.svg?height=128&width=128"} alt={character.name} />
-            <AvatarFallback className="text-3xl bg-gradient-to-r from-brand-100 to-accent-100">
-              {character.name[0]}
-            </AvatarFallback>
-          </Avatar>
+          <LetterAvatar name={character.name} className="w-24 h-24 md:w-32 md:h-32 text-3xl" />
 
           <div className="flex-1 text-center md:text-left">
             <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">

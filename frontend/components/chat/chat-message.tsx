@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Bot, User } from "lucide-react"
 import type { Message } from "@/types/message"
 import type { Character } from "@/types/character"
+import { LetterAvatar } from "@/components/ui/letter-avatar"
 
 interface ChatMessageProps {
   message: Message
@@ -15,12 +16,7 @@ export function ChatMessage({ message, character }: ChatMessageProps) {
   return (
     <div className={`flex gap-3 ${isUser ? "justify-end" : "justify-start"}`}>
       {!isUser && (
-        <Avatar className="w-8 h-8 mt-1">
-          <AvatarImage src={character.avatar || "/placeholder.svg"} alt={character.name} />
-          <AvatarFallback className="bg-gradient-to-r from-brand-100 to-accent-100 text-sm">
-            <Bot className="h-4 w-4" />
-          </AvatarFallback>
-        </Avatar>
+        <LetterAvatar name={character.name} className="w-8 h-8 mt-1" />
       )}
 
       <div className={`max-w-[85%] md:max-w-[70%] ${isUser ? "order-first" : ""}`}>

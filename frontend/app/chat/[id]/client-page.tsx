@@ -9,37 +9,65 @@ import { ChatCharacterInfo } from "@/components/chat/chat-character-info"
 import { ChatMessage } from "@/components/chat/chat-message"
 import { TypingIndicator } from "@/components/chat/typing-indicator"
 import { ChatInput } from "@/components/chat/chat-input"
+import { apiService } from "@/lib/api"
+import { useToast } from "@/components/ui/use-toast"
 
 interface ChatClientPageProps {
   character: Character
 }
 
 export function ChatClientPage({ character }: ChatClientPageProps) {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "1",
-      role: "assistant",
-      content: `Привет! Я ${character.name}, твой помощник! 😊 Готов к общению?`,
-      timestamp: new Date(),
-    },
-  ])
+  const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isTyping, setIsTyping] = useState(false)
+  const [isLoadingHistory, setIsLoadingHistory] = useState(true)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const { toast } = useToast()
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
+
+  // Fetch chat history on initial load
+  useEffect(() => {
+    const fetchHistory = async () => {
+      setIsLoadingHistory(true)
+      const { success, messages: historyMessages, error } = await apiService.getChatHistory(character.id);
+      if (success) {
+        // Add the initial greeting if history is empty
+        if (historyMessages.length === 0) {
+            setMessages([
+                {
+                    id: "initial-greeting",
+                    role: "assistant",
+                    content: `Привет! Я ${character.name}, твой помощник! 😊 Готов к общению?`,
+                    timestamp: new Date(),
+                },
+            ]);
+        } else {
+            setMessages(historyMessages.map(m => ({...m, timestamp: new Date(m.timestamp)})));
+        }
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Ошибка загрузки истории",
+          description: `Не удалось загрузить историю чата: ${error}`,
+        })
+      }
+      setIsLoadingHistory(false)
+    };
+    fetchHistory();
+  }, [character.id, character.name, toast]);
 
   useEffect(() => {
     scrollToBottom()
   }, [messages])
 
   const handleSend = async () => {
-    if (!input.trim()) return
+    if (!input.trim() || isTyping) return
 
     const userMessage: Message = {
-      id: Date.now().toString(),
+      id: `user-${Date.now()}`,
       role: "user",
       content: input,
       timestamp: new Date(),
@@ -49,25 +77,27 @@ export function ChatClientPage({ character }: ChatClientPageProps) {
     setInput("")
     setIsTyping(true)
 
-    // Симуляция ответа ИИ
-    setTimeout(() => {
-      const responses = [
-        "Отличный вопрос! 🤔 Давай разберем это пошагово...",
-        "Понимаю тебя! Это действительно важная тема. Вот что я думаю...",
-        "Супер! 🎉 Ты задаешь правильные вопросы. Позволь объяснить...",
-        "Хм, интересно! 💡 Я помогу тебе с этим разобраться...",
-      ]
+    const result = await apiService.sendChatMessage(character.id, input)
 
+    setIsTyping(false)
+
+    if (result.success && result.data) {
       const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
+        id: result.data.messageId,
         role: "assistant",
-        content: responses[Math.floor(Math.random() * responses.length)],
+        content: result.data.response,
         timestamp: new Date(),
       }
-
       setMessages((prev) => [...prev, assistantMessage])
-      setIsTyping(false)
-    }, 1500)
+    } else {
+      toast({
+        variant: "destructive",
+        title: "Ошибка отправки сообщения",
+        description: `Не удалось получить ответ от ${character.name}. Пожалуйста, попробуйте еще раз.`,
+      })
+      // Optional: remove the user's message if the API call fails
+      setMessages((prev) => prev.filter((msg) => msg.id !== userMessage.id))
+    }
   }
 
   return (
@@ -79,9 +109,15 @@ export function ChatClientPage({ character }: ChatClientPageProps) {
           <ChatCharacterInfo character={character} />
 
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
-            {messages.map((message) => (
-              <ChatMessage key={message.id} message={message} character={character} />
-            ))}
+            {isLoadingHistory ? (
+              <div className="flex justify-center items-center h-full">
+                <TypingIndicator character={character} />
+              </div>
+            ) : (
+              messages.map((message) => (
+                <ChatMessage key={message.id} message={message} character={character} />
+              ))
+            )}
 
             {isTyping && <TypingIndicator character={character} />}
 
